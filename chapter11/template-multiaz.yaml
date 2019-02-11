@@ -22,37 +22,41 @@ Parameters:
     Description: 'The email address of the administrator.'
     Type: String
 Mappings:
+# AMI is amzn-ami-hvm-2018.03.0.20180412-x86_64-ebs
   RegionMap:
+  # undefined in eu-north-1
     'ap-south-1':
-      AMI: 'ami-2ed19c41'
+      AMI: 'ami-b96f48d6'
     'eu-west-3':
-      AMI: 'ami-c8a017b5'
+      AMI: 'ami-dcff4ea1'
     'eu-west-2':
-      AMI: 'ami-e3051987'
+      AMI: 'ami-dc2ecebb'
     'eu-west-1':
-      AMI: 'ami-760aaa0f'
+      AMI: 'ami-ccbf9ab5'
+    'ap-northeast-3':
+      AMI: 'ami-79c0ce04'
     'ap-northeast-2':
-      AMI: 'ami-fc862292'
+      AMI: 'ami-0bad0365'
     'ap-northeast-1':
-      AMI: 'ami-2803ac4e'
+      AMI: 'ami-ba233fc6'
     'sa-east-1':
-      AMI: 'ami-1678037a'
+      AMI: 'ami-0c89d860'
     'ca-central-1':
-      AMI: 'ami-ef3b838b'
+      AMI: 'ami-b939bfdd'
     'ap-southeast-1':
-      AMI: 'ami-dd7935be'
+      AMI: 'ami-04270678'
     'ap-southeast-2':
-      AMI: 'ami-1a668878'
+      AMI: 'ami-f0a06892'
     'eu-central-1':
-      AMI: 'ami-e28d098d'
+      AMI: 'ami-7f326994'
     'us-east-1':
-      AMI: 'ami-6057e21a'
+      AMI: 'ami-5679a229'
     'us-east-2':
-      AMI: 'ami-aa1b34cf'
+      AMI: 'ami-06615263'
     'us-west-1':
-      AMI: 'ami-1a033c7a'
+      AMI: 'ami-53e2f133'
     'us-west-2':
-      AMI: 'ami-32d8124a'
+      AMI: 'ami-218eed59'
 Resources:
   VPC:
     Type: 'AWS::EC2::VPC'
